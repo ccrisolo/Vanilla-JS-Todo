@@ -1,0 +1,112 @@
+html{
+    height: 100vh;
+    min-width: 600px;
+    background-image: linear-gradient(130deg, #FFFFFF, #1c8078);
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.container {
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    font-family: 'MuseoModerno', sans-serif;
+}
+
+.logo {
+    display: flex;
+    margin:auto;
+    flex-direction: column;
+    max-width: 500px;
+    padding: 1.5rem;
+    align-items: center;
+}
+
+.main {
+    padding: 20px;
+
+}
+
+form {
+    background-color: #FFFFFF;
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+}
+
+input {
+    height: 30px;
+    outline: 0;
+    border: none;
+    font-size: 1rem;
+    font-family: 'MuseoModerno', sans-serif;
+    color: #1c8078;
+    flex-grow: 1;
+}
+
+button {
+    font-size: 1.5rem;
+    background-color: white;
+    outline: none;
+    border: none;
+    color: green;
+}
+
+button:hover{
+    color: greenyellow;
+    cursor: pointer;
+}
+
+.todo-list {
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    margin-top: 20px;
+    padding: 10px 25px;
+    height: 100%;
+}
+
+ul {
+    padding-left: 0px;
+    list-style: none;
+
+}
+
+li {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+    padding: 50px;
+    font-size: 1rem;
+    color: #595959;
+}
+
+i {
+    pointer-events: none;
+}
+
+.clear-all {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 3px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.clear-all:hover{
+    color: lightcoral;
+}   
+
+.todo-item {
+    flex-grow: 1;
+}
+
+.todo-list-item {
+    transition: all 0.3s ease-out;
+}
+
+.todo-list-item-fall {
+    transform: translateY(12rem) rotateZ(10deg);
+    opacity: 0;
+}
